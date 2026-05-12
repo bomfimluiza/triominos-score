@@ -6,12 +6,22 @@ import { PiUserPlus } from "react-icons/pi";
 import { PiClockCounterClockwise } from "react-icons/pi";
 import { PiNewspaper } from "react-icons/pi";
 
+const labels = {
+    title: "TRIOMINOS",
+    subtitle: "SCORE",
+    newGame: <h1>INICIAR<br/>PARTIDA</h1>,
+    ranking: "RANKING",
+    register: "CADASTRO",
+    history: "HISTÓRICO",
+    rules: "REGRAS"
+}
+
 function Home() {
     return (
         <div className={styles.homeContainer}>
             <section className={styles.title}>
-                <h2>TRIOMINOS</h2>
-                <h3>SCORE</h3>
+                <h2>{labels.title}</h2>
+                <h3>{labels.subtitle}</h3>
             </section>
 
             <button className={styles.newGameButton}>
@@ -26,26 +36,26 @@ function Home() {
                         </div>
                     </div>
 
-                    <h1>INICIAR<br/>PARTIDA</h1>
+                    {labels.newGame}
                 </div>
             </button>
 
             <section className={styles.menu}>
                 <button className={styles.menuButton}>
                     <PiRanking className={styles.menuIcon} />
-                    RANKING
+                    {labels.ranking}
                 </button>
                 <button className={styles.menuButton}>
                     <PiUserPlus className={styles.menuIcon} />
-                    CADASTRO
+                    {labels.register}
                 </button>
                 <button className={styles.menuButton}>
                     <PiClockCounterClockwise className={styles.menuIcon} />
-                    HISTÓRICO
+                    {labels.history}
                 </button>
                 <button className={styles.menuButton}>
                     <PiNewspaper className={styles.menuIcon} />
-                    REGRAS
+                    {labels.rules}
                 </button>
             </section>
         </div>
