@@ -1,0 +1,97 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100svh - calc(2*var(--view-container-padding)));
+    justify-content: center;
+    gap: 80px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+.title h2 {
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 4px;
+    line-height: 50px;
+}
+.title h3 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: normal;
+    color: var(--accent);
+}
+
+.newGameButton {
+    clip-path: polygon(102% 88%, 50% -2%, -2% 88%);
+    color: var(--accent-blue);
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+}
+.newGameBackground {
+    color: var(--accent);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.newGameButton:hover .newGameBackground {
+    color: var(--accent-dark);
+}
+.newGameButtonForeground {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0;
+}
+.newGameButtonForeground h1 {
+    padding: 0;
+}
+
+.threeTrianglesIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.threeTrianglesIconBottomRow {
+    display: flex;
+}
+.threeTrianglesIconUnit {
+    height: 40px;
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.menuButton {
+    width: 25%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.menuIcon {
+    width: 100%;
+    height: 40px;
+    color: var(--accent);
+}
+.menuButton:hover .menuIcon  {
+    color: var(--accent-dark);
+}
