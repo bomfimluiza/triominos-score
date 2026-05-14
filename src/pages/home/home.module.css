@@ -6,24 +6,6 @@
     gap: 80px;
 }
 
-.title {
-    display: flex;
-    flex-direction: column;
-}
-.title h2 {
-    margin: 0;
-    font-size: 50px;
-    letter-spacing: 4px;
-    line-height: 50px;
-}
-.title h3 {
-    margin: 0;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: normal;
-    color: var(--accent);
-}
-
 .newGameButton {
     clip-path: polygon(102% 88%, 50% -2%, -2% 88%);
     color: var(--accent-blue);

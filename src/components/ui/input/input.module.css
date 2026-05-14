@@ -1,0 +1,18 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer span {
+    align-self: self-start;
+    font-size: 16px;
+}
+
+.inputContainer input {
+    clip-path: polygon(0.1% 0%, 100% 0%, 98% 50%, 100% 100%, 0.1% 100%, 2% 50%);
+    padding: 4px 12px;
+    background-color: var(--bg-h);
+    color: var(--text-h);
+    border: none;
+    font-size: 16px;
+}

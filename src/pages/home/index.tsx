@@ -1,28 +1,25 @@
 import styles from './home.module.css'
 
-import { PiTriangleFill } from "react-icons/pi";
-import { PiRanking } from "react-icons/pi";
-import { PiUserPlus } from "react-icons/pi";
-import { PiClockCounterClockwise } from "react-icons/pi";
-import { PiNewspaper } from "react-icons/pi";
+import VerticalLogo from '../../components/verticalLogo';
+
+import { PiTriangleFill } from 'react-icons/pi';
+import { PiRanking } from 'react-icons/pi';
+import { PiUserPlus } from 'react-icons/pi';
+import { PiClockCounterClockwise } from 'react-icons/pi';
+import { PiNewspaper } from 'react-icons/pi';
 
 const labels = {
-    title: "TRIOMINOS",
-    subtitle: "SCORE",
     newGame: <h1>INICIAR<br/>PARTIDA</h1>,
-    ranking: "RANKING",
-    register: "CADASTRO",
-    history: "HISTÓRICO",
-    rules: "REGRAS"
+    ranking: 'RANKING',
+    register: 'CADASTRO',
+    history: 'HISTÓRICO',
+    rules: 'REGRAS'
 }
 
 function Home() {
     return (
         <div className={styles.homeContainer}>
-            <section className={styles.title}>
-                <h2>{labels.title}</h2>
-                <h3>{labels.subtitle}</h3>
-            </section>
+            <VerticalLogo />
 
             <button className={styles.newGameButton}>
                 <PiTriangleFill className={styles.newGameBackground} />

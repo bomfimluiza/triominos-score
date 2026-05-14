@@ -1,0 +1,37 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100svh - calc(2*var(--view-container-padding)));
+    justify-content: space-between;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.titleContainer hr {
+    margin: 0;
+    height: 0;
+    width: 100%;
+}
+.titleContainer h3 {
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 24px;
+}
+.formButton {
+    margin-top: 16px;
+}
