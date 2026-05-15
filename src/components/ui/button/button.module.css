@@ -1,0 +1,16 @@
+.button {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    width: fit-content;
+    padding: 8px 40px;
+    align-self: center;
+    border: none;
+    color: var(--accent-blue);
+    background-color: var(--accent);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: var(--accent-dark);
+}

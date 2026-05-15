@@ -1,0 +1,6 @@
+.link {
+    color: var(--accent);
+}
+.link:hover {
+    color:var(--accent-dark);
+}
